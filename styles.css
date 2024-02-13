@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Young+Serif&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+img, svg{
+    mix-width: 100%;
+    display: block;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(254, 238, 217);
+}
+
+.container {
+    height: 100vh;
+    background-color: rgb(254, 238, 217);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#usernameInput {
+    width: 70%;
+    height: 60vh;
+    text-align: left;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 20px;
+    border: 1px solid lightgray;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+#usernameInput:focus {
+    border: 0 solid;
+}
+
+button {
+    border-radius: 4px;
+    width: 15em;
+    height: 3.5em;
+    background-color: rgb(87, 146, 89);
+    color: white;
+    text-align: center;
+    border: 0 solid;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(51, 85, 52, 0.2);
+}
+
+.console-area {
+    width: 70%;
+    max-width: 800px;
+    height: 50vh;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+/*=========================================================*/
+
+/* Desktop styles */
+@media (min-width: 768px) {
+    .container {
+        height: 100vh;
+        background-color: rgb(254, 238, 217);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #usernameInput {
+        width: 70%;
+        max-width: 800px;
+        height: 50vh;
+        text-align: left;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 20px;
+        border: 1px solid lightgray;
+        background-color: white;
+        resize: none;
+        margin-bottom: 20px;
+    }
+
+    #usernameInput:focus {
+        border: 0 solid;
+    }
+    
+    button {
+        border-radius: 4px;
+        width: 15em;
+        height: 3.5em;
+        background-color: rgb(87, 146, 89);
+        color: white;
+        text-align: center;
+        border: 0 solid;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 38%;
+        box-shadow: 2px 2px 4px rgba(51, 85, 52, 0.2);
+    }
+
+    button:hover {
+        width: 15.2em;
+        height: 3.6em;
+        margin-left: 38%;
+    }
+
+    .console-area {
+        width: 70%;
+        max-width: 800px;
+        height: auto;
+        margin-top: 15px;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        justify-content: center;
+        align-items: center;
+    }
+}
